@@ -9,9 +9,10 @@ html {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
   --twitter: hsl(203, 89%, 53%);
-  --youtube: hsl(348, 97%, 39%); }
+  --youtube: hsl(348, 97%, 39%);
+}
 
-html[data-theme='light'] {
+html[data-theme="light"] {
   --font-white: hsl(230, 17%, 14%);
   --down-blue: hsl(0, 0%, 100%);
   --top-blue: hsl(225, 100%, 98%);
@@ -22,26 +23,32 @@ html[data-theme='light'] {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
   --twitter: hsl(203, 89%, 53%);
-  --youtube: hsl(348, 97%, 39%); }
+  --youtube: hsl(348, 97%, 39%);
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
-  font-family: 'Inter'; }
+  font-family: "Inter";
+}
 
 .card {
-  background: var(--card-blue); }
+  background: var(--card-blue);
+}
 
 .card:hover {
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   height: 0;
   width: 0;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 label {
   cursor: pointer;
@@ -51,10 +58,11 @@ label {
   background: var(--lime-green);
   float: right;
   border-radius: 100px;
-  position: relative; }
+  position: relative;
+}
 
 label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 3px;
@@ -62,89 +70,123 @@ label:after {
   height: 20px;
   background: var(--top-blue);
   border-radius: 90px;
-  transition: 0.3s; }
+  transition: 0.3s;
+}
 
 input:checked + label {
-  background: #aeb3cb; }
+  background: #aeb3cb;
+}
 
 input:checked + label:after {
   left: calc(100% - 5px);
-  transform: translateX(-100%); }
+  transform: translateX(-100%);
+}
 
 label:active:after {
-  width: 45px; }
+  width: 45px;
+}
 
 #home {
   background: var(--down-blue);
-  color: var(--font-white); }
+  color: var(--font-white);
+}
 
 #main-div {
   background: var(--top-blue);
   height: 250px;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+}
 
 #media-div p {
-  color: var(--card-text-blue); }
+  color: var(--card-text-blue);
+}
 
 #card-section {
   margin-top: -100px;
-  margin-bottom: 50px; }
-  #card-section .card-1 {
-    border-top: 3.5px solid var(--facebook); }
-    #card-section .card-1 h3 {
-      margin-bottom: 0; }
-  #card-section .card-2 {
-    border-top: 3.5px solid var(--twitter); }
-    #card-section .card-2 h3 {
-      margin-bottom: 0; }
-  #card-section .card-3 {
-    border-top: 3.5px solid var(--youtube); }
-    #card-section .card-3 h3 {
-      margin-bottom: 0; }
-  #card-section .card-4 {
-    border-top: 3.5px solid var(--youtube); }
-    #card-section .card-4 h3 {
-      margin-bottom: 0; }
-  #card-section h3 {
-    font-weight: 700;
-    font-size: 4rem;
-    padding-bottom: 0; }
-  #card-section .facebook p {
-    color: var(--card-text-blue);
-    font-weight: 600; }
-  #card-section .number h6 {
-    color: var(--card-text-blue);
-    letter-spacing: 4px; }
-  #card-section .up p {
-    color: var(--lime-green);
-    font-weight: 600; }
-  #card-section .tube .up p {
-    color: var(--bright-red);
-    font-weight: 600; }
+  margin-bottom: 50px;
+}
+#card-section .card-1 {
+  border-top: 3.5px solid var(--facebook);
+}
+#card-section .card-1 h3 {
+  margin-bottom: 0;
+}
+#card-section .card-2 {
+  border-top: 3.5px solid var(--twitter);
+}
+#card-section .card-2 h3 {
+  margin-bottom: 0;
+}
+#card-section .card-3 {
+  border-top: 3.5px solid var(--youtube);
+}
+#card-section .card-3 h3 {
+  margin-bottom: 0;
+}
+#card-section .card-4 {
+  border-top: 3.5px solid var(--youtube);
+}
+#card-section .card-4 h3 {
+  margin-bottom: 0;
+}
+#card-section h3 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding-bottom: 0;
+}
+#card-section .facebook p {
+  color: var(--card-text-blue);
+  font-weight: 600;
+}
+#card-section .number h6 {
+  color: var(--card-text-blue);
+  letter-spacing: 4px;
+}
+#card-section .up p {
+  color: var(--lime-green);
+  font-weight: 600;
+}
+#card-section .tube .up p {
+  color: var(--bright-red);
+  font-weight: 600;
+}
+
+#bottom-cards {
+  padding-bottom: 2rem;
+}
 
 #bottom-cards .facebook p {
-  color: var(--card-text-blue); }
+  color: var(--card-text-blue);
+}
 
 #bottom-cards .up p {
-  color: var(--lime-green); }
+  color: var(--lime-green);
+}
 
 #bottom-cards .likes .up p {
-  color: var(--bright-red); }
+  color: var(--bright-red);
+}
 
 #bottom-cards .reds .up p {
-  color: var(--bright-red); }
+  color: var(--bright-red);
+}
 
 @media (max-width: 500px) {
   .card {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  }
   #media-div {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: center; }
+    justify-content: center;
+  }
   #media-div .mb4 {
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--card-text-blue); }
+    border-bottom: 1px solid var(--card-text-blue);
+  }
   #card-section {
     margin-top: -50px;
-    margin-bottom: 50; } }
+    margin-bottom: 50;
+  }
+}
